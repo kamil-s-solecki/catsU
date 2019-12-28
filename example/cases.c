@@ -1,20 +1,11 @@
 #include <stdio.h>
 #include "test_cases.h"
-
-void foo()
-{
-    printf("fooo!\n");    
-}
-
-void bar()
-{
-    printf("barrrrr!\n");    
-}
+#include "example_test.h"
 
 TestCases* createTestCases()
 {
     TestCases *cases = TestCases__create();
-    TestCases__add(cases, foo);
-    TestCases__add(cases, bar);
+    TestCases__add(cases, test_foo);
+    TestCases__add(cases, test_bar);
     return cases; 
 }
