@@ -3,7 +3,6 @@
 lib="$(pwd)/build/lib"
 includes="$(pwd)/build/includes"
 
-cd example
-gcc -L$lib -I$includes -Wl,-rpath=$lib -o main *.c -lcunit
+gcc -L$lib -I$includes -Wl,-rpath=$lib -o build/example example/*.c -lcunit
 
-./main
+build/example
