@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include "test_cases.h"
 
-
-void run()
+void run(TestCases* cases)
 {
-    printf("Running!");
+    printf("Running!\n");
+
+    TestCases__runAll(cases);        
 }

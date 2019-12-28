@@ -1,6 +1,10 @@
+#include "test_cases.h"
+#include "cases.h"
 #include "runner.h"
 
 void main()
 {
-    run();
+    TestCases *cases = createTestCases();
+
+    run(cases);
 }
