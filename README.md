@@ -1,5 +1,5 @@
 # catsU
-### Tiny C unit testing framework.
+### A tiny unit testing framework in C.
 
 Examples can be found in [example_test.c](example/test/example_test.c)
 
