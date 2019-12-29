@@ -5,11 +5,11 @@
 
 AssertionResult test_foo()
 {
-    return assertTrue("Should return true", true);
+    return assert_true("Should return true", true);
 }
 
 AssertionResult test_bar()
 {
-    return assertTrue("Should return false", false);
+    return assert_true("Should return false", false);
 }
 

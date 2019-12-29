@@ -3,6 +3,6 @@
 
 #include "assertion_result.h"
 
-AssertionResult assertTrue(char* test_name, bool value);
+AssertionResult assert_true(char* test_name, bool value);
 
 #endif
