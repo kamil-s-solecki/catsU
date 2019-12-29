@@ -29,7 +29,7 @@ AssertionResult test_int_equality_fail()
 {
     int result = broken_int_sum(2, 3);
 
-    return assert_int_equals("Should not be equal to 123", 5, result);
+    return assert_int_equals("Should not be equal to 5", 5, result);
 }
 
 AssertionResult test_char_equality_success()
