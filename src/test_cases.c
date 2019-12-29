@@ -6,6 +6,8 @@
 #define RESET   "\033[0m"
 #define RED     "\033[31m"      /* Red */
 #define GREEN   "\033[32m"      /* Green */
+#define GREY   "\033[47m"      /* Grey */
+#define CYAN    "\033[36m"      /* Cyan */
 
 struct TestCases {
     size_t amount;
@@ -34,12 +36,17 @@ void TestCases__runAll(TestCases* self)
     struct TestCases *_self = (struct TestCases*) self;
     for (size_t i = 0; i < _self->amount; i++) {
         AssertionResult result = _self->test_cases[i]();
+        
+        printf(">> ");
+
+        char buf[256];
+        snprintf(buf, sizeof buf, "%s(%s)%s ", CYAN, result.test_name, RESET);
+        printf(buf);
 
         if (result.success) {
             printf(GREEN "Success\n" RESET);
         } else {
-            char buf[256];
-            snprintf(buf, sizeof buf, "%s%s%s\n", RED, result.errorMessage, RESET);
+            snprintf(buf, sizeof buf, "%s%s%s\n", RED, result.error_message, RESET);
             printf(buf);
         }
     }

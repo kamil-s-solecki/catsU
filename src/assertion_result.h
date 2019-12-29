@@ -5,7 +5,8 @@
 
 typedef struct AssertionResult {
     bool success;
-    char* errorMessage;
+    char* error_message;
+    char* test_name;
 } AssertionResult;
 
 #endif
