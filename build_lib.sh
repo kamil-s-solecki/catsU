@@ -9,7 +9,7 @@ gcc -c -fpic *.c
 cd ..
 mkdir -p build/lib
 
-gcc -shared -o build/lib/libcunit.so src/*.o 
+gcc -shared -o build/lib/libcatsu.so src/*.o 
 
 rm src/*.o
 
