@@ -3,7 +3,7 @@
 
 void run(TestCases* cases)
 {
-    printf("Running!\n");
+    printf("\n############      Running!      ############\n\n");
 
     TestCases__runAll(cases);        
 }
