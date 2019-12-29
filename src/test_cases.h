@@ -1,6 +1,8 @@
+#include "assertion_result.h"
+
 typedef void* TestCases;
 
-typedef void (*test_case_pointer)(void);
+typedef AssertionResult (*test_case_pointer)(void);
 
 TestCases* TestCases__create();
 

@@ -1,3 +1,10 @@
-void test_foo();
+#ifndef __EXAMPLE_TEST_H
+#define __EXAMPLE_TEST_H
 
-void test_bar();
+#include "assertion_result.h"
+
+AssertionResult test_foo();
+
+AssertionResult test_bar();
+
+#endif

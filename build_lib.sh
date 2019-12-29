@@ -11,5 +11,7 @@ mkdir -p build/lib
 
 gcc -shared -o build/lib/libcunit.so src/*.o 
 
+rm src/*.o
+
 mkdir -p build/includes
 cp src/*.h build/includes/

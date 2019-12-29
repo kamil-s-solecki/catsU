@@ -1,12 +1,15 @@
 #include <stdio.h>
+#include <stdbool.h>
+#include "asserts.h"
+#include "assertion_result.h"
 
-void test_foo()
+AssertionResult test_foo()
 {
-    printf("fooo!\n");    
+    return assertTrue(true);
 }
 
-void test_bar()
+AssertionResult test_bar()
 {
-    printf("barrrrr!\n");    
+    return assertTrue(false);
 }
 
