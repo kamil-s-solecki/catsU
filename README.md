@@ -7,6 +7,6 @@ To run a test, create a [TestCases](src/test_cases.h) struct and register your t
 
 A test function must have no arguments, and return an [AssertionResult](src/assertion_result.h) which is returned by each of predefined [assertions](src/asserts.h).
 
-Example test results:
+
 
 ![results](https://i.postimg.cc/65RWYqdF/results2.png)
